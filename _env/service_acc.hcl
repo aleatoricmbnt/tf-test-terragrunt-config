@@ -3,10 +3,10 @@ terraform {
 }
 
 dependency "helper" {
-  config_path = "../helpers"
+  config_path = "${get_terragrunt_dir()}/../helpers"
 }
 
 inputs = {
-  service_acc_name = dependency.helper.outputs.random_pet_name
-  service_acc_id   = dependency.helper.outputs.random_pet_name
+  service_acc_name = "initial-apply-without-outputs"
+  service_acc_id   = "initial-apply-without-outputs"
 }

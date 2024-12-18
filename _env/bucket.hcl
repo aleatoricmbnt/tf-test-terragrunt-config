@@ -7,6 +7,6 @@ dependency "helper" {
 }
 
 inputs = {
-  bucket_name = dependency.helper.outputs.random_pet_name
+  bucket_name = "initial-test-apply"
   region      = "us-east"
 }
