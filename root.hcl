@@ -15,3 +15,18 @@ provider "google" {
 }
 EOF
 }
+
+generate "required_providers" {
+  path      = "required_providers.tf"
+  if_exists = "overwrite"
+  contents  = <<EOF
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 5.0"
+    }
+  }
+}
+EOF
+}
