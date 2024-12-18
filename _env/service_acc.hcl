@@ -3,7 +3,7 @@ terraform {
 }
 
 dependency "helper" {
-  config_path = "../qa/helpers"
+  config_path = "../helpers"
 }
 
 inputs = {

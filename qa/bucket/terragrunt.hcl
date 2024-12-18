@@ -3,7 +3,7 @@ include "root" {
 }
 
 include "env" {
-  path   = "${get_terragrunt_dir()}/../../_env/bucket.hcl"
+  path   = "${dirname(find_in_parent_folders("root.hcl"))}/_env/bucket.hcl"
   expose = true
 }
 
