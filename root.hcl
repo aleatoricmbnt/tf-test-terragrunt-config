@@ -11,7 +11,7 @@ generate "provider" {
   if_exists = "overwrite"
   contents  = <<EOF
 provider "google" {
-  project = personal-playground-437910
+  project = "personal-playground-437910"
 }
 EOF
 }
