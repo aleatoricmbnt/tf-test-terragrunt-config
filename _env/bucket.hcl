@@ -4,9 +4,10 @@ terraform {
 
 dependency "helper" {
   config_path = "${get_terragrunt_dir()}/../helpers"
+  skip_outputs = true
 }
 
 inputs = {
-  bucket_name = dependency.helper.outputs.random_pet_name
+  bucket_name = "smth-to-create"
   region      = "us-east"
 }

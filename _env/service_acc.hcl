@@ -4,9 +4,10 @@ terraform {
 
 dependency "helper" {
   config_path = "${get_terragrunt_dir()}/../helpers"
+  skip_outputs = true
 }
 
 inputs = {
-  service_acc_name = dependency.helper.outputs.random_pet_name
-  service_acc_id   = dependency.helper.outputs.random_pet_name
+  service_acc_name = "smth-to-create"
+  service_acc_id   = "smth-to-create"
 }
