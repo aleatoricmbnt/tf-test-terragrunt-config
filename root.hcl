@@ -2,7 +2,7 @@ remote_state {
   backend = "gcs"
   config = {
     bucket         = "terragrunt-tofu-state"
-    key            = "test/tofu.tfstate"
+    prefix         = "${path_relative_to_include()}"
   }
 }
 
