@@ -8,6 +8,6 @@ dependency "helper" {
 }
 
 inputs = {
-  service_acc_name = "initial-apply-without-outputs"
-  service_acc_id   = "initial-apply-without-outputs"
+  service_acc_name = "initial-apply-wo-outputs"
+  service_acc_id   = "initial-apply-wo-outputs"
 }
