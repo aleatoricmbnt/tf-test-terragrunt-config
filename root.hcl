@@ -2,8 +2,7 @@ remote_state {
   backend = "gcs"
   config = {
     bucket         = "terragrunt-tofu-state"
-    key            = "${path_relative_to_include()}/tofu.tfstate"
-    prefix         = ""
+    key            = "test/tofu.tfstate"
   }
 }
 
@@ -12,7 +11,7 @@ generate "provider" {
   if_exists = "overwrite"
   contents  = <<EOF
 provider "google" {
-  project = null
+  project = personal-playground-437910
 }
 EOF
 }
