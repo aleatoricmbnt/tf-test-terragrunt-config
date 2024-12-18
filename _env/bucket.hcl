@@ -4,7 +4,6 @@ terraform {
 
 dependency "helper" {
   config_path = "${get_terragrunt_dir()}/../helpers"
-  skip_outputs = true
 }
 
 inputs = {
