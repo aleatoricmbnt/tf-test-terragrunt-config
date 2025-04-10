@@ -8,6 +8,6 @@ dependency "helper" {
 }
 
 inputs = {
-  bucket_name = "smth-to-create"
+  bucket_name = "smth-to-create" #dependency.helper.outputs.random_pet_name
   region      = "us-east"
 }
